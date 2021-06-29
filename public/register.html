@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    .wrapper{
+      width:400px;
+      height:280px;
+      /*border:1px solid black;*/
+      border-radius:20px;
+      margin:150px auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-evenly;
+      flex-direction:column;
+      background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+      position:relative;
+    }
+    .wrapper form input{
+      outline:none;
+      border:none;
+      border-radius:3px;
+    }
+    .wrapper form input.submit{
+      width:100px;
+      height:25px;
+      border-radius:10px;
+      color:#fff;
+      background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+      margin-top:5px;
+      position:relative;
+      left:70px;
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <h1 style="color:#192a56">Register</h1>
+  <form action="http://localhost:3000/register" method="post">
+    邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：<input type="email" name="email"><br><br>
+    昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：<input type="text" name="nick_name"><br><br>
+    密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：<input type="password" name="password"><br><br>
+    重复密码：<input type="password" name="re_password"><br><br>
+    <input type="submit" class="submit">
+  </form>
+</div>
+</body>
+</html>

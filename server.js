@@ -6,9 +6,9 @@ app.use(express.static(__dirname+'/public'));
 // 使用内置中间件解析post请求urlencoded参数
 app.use(express.urlencoded({extended:true}));
 // 引入UI路由
-const UIRouter=require('./route/UIRouter');
+const UIRouter=require('./routes/UIRouter');
 // 引入业务路由
-const BusinessRouter=require('./route/BusinessRouter');
+const BusinessRouter=require('./routes/BusinessRouter');
 // 配置模板引擎
 app.set('view engine','ejs');
 app.set('views','./views');
